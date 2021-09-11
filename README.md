@@ -5,8 +5,16 @@ It uses VueJS as FrontEnd, json-server as a test server and AWS Amplify as to co
 
 ## Project setup
 ```
-npm install
+npm install -g npm
+
 ```
+- Install vue-cli
+npm install -g @vue/cli
+
+- Install aws amplify API and vue library 
+
+npm install --save aws-amplify @aws-amplify/ui-vue
+
 
 ### Compiles and hot-reloads for development
 ```
