@@ -23,6 +23,12 @@ npm install -g @aws-amplify/cli
 
 - Run amplify init to configure project name and environment
 
+- Run amplify add auth to use authentication
+
+- Run amplify push to create resources in AWS Account
+
+- Run amplify status to check status of the newly created AWS Cognito User Pool 
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
