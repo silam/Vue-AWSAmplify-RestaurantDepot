@@ -15,6 +15,13 @@ npm install -g @vue/cli
 
 npm install --save aws-amplify @aws-amplify/ui-vue
 
+- Install AWS Amplify CLI
+
+npm install -g @aws-amplify/cli
+
+- Run amplify configure to enter accesskeyid and secretkeyid
+
+- Run amplify init to configure project name and environment
 
 ### Compiles and hot-reloads for development
 ```
