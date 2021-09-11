@@ -29,6 +29,9 @@ npm install -g @aws-amplify/cli
 
 - Run amplify status to check status of the newly created AWS Cognito User Pool 
 
+- To look at Cognito anytime, go to
+https://console.aws.amazon.com/cognito/
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
