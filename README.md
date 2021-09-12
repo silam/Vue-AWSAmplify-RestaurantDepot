@@ -7,6 +7,10 @@ It also uses DynamoDB as serverless Database to keep the list of Restaurant.
 You can see the web running at 
 http://vueamplifyres-20210912080612-hostingbucket-dev.s3-website-us-east-1.amazonaws.com/
 
+# Main Page after login
+
+![FrontEnd UI/UX](https://github.com/silam/Vue-AWSAmplify-RestaurantDepot/blob/main/public/MainPage.png?raw=true)
+
 
 ## Project setup
 ```
