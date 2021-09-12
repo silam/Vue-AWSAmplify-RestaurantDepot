@@ -3,4 +3,8 @@ type Restaurant @model {
   name: String!
   description: String!
   city: String!
+  state: String
+  zipcode: String
+  stars: String
+  address: String
 }

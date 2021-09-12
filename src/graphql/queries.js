@@ -8,6 +8,10 @@ export const getRestaurant = /* GraphQL */ `
       name
       description
       city
+      state
+      zipcode
+      stars
+      address
       createdAt
       updatedAt
     }
@@ -25,6 +29,10 @@ export const listRestaurants = /* GraphQL */ `
         name
         description
         city
+        state
+        zipcode
+        stars
+        address
         createdAt
         updatedAt
       }

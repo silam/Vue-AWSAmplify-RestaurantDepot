@@ -8,6 +8,10 @@ export const onCreateRestaurant = /* GraphQL */ `
       name
       description
       city
+      state
+      zipcode
+      stars
+      address
       createdAt
       updatedAt
     }
@@ -20,6 +24,10 @@ export const onUpdateRestaurant = /* GraphQL */ `
       name
       description
       city
+      state
+      zipcode
+      stars
+      address
       createdAt
       updatedAt
     }
@@ -32,6 +40,10 @@ export const onDeleteRestaurant = /* GraphQL */ `
       name
       description
       city
+      state
+      zipcode
+      stars
+      address
       createdAt
       updatedAt
     }

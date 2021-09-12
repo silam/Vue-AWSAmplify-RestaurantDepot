@@ -15,33 +15,33 @@
 
       <div class="form-body">
         <form v-on:submit.prevent autocomplete="off">
-          <div>
+          <div class='left'> 
             <label>Name: </label>
             <input v-model='form.name' class='input' autocomplete="off" />
           </div>
-          <div>
+          <div class='left'>
             <label>Description: </label>
             <input v-model='form.description' class='input' autocomplete="off" />
           </div>
-          <div>
+          <div class='left'>
             <label>Address: </label>
             <input v-model='form.address' class='input' autocomplete="off" />
           </div>
-          <div>
+          <div class='left'>
             <label>City: </label>
             <input v-model='form.city' class='input' autocomplete="off" />
           </div>
-          <div>
+          <div class='left'>
             <label>Zipcode: </label>
             <input v-model='form.zipcode' class='input' autocomplete="off" />
           </div>
 
-          <div>
+          <div class='left'>
             <label>State: </label>
             <input v-model='form.state' class='input' autocomplete="off" />
           </div>
 
-          <div>
+          <div class='left'>
             <label>Stars: </label>
             <input v-model='form.stars' class='input' autocomplete="off" />
           </div>
@@ -50,7 +50,6 @@
 
           <button @click='getData' class='button'>Refresh</button>
         
-          <amplify-sign-out ></amplify-sign-out>
         </form>
       </div>
 
@@ -63,11 +62,23 @@
             <div class="name">{{ restaurant.city }}</div>
             <div class="price">{{ restaurant.name }}</div>
             <div class="symbol">{{ restaurant.description }}</div>
+            <div class="name">{{ restaurant.state }}</div>
+
           </div>
         </div>
       </div>
 
+      <!-- <div id="LoginSignOut">
+            <AmplifySignOut id="SignOutButton"/>
+      </div> -->
 
+
+      <div style="align-items: center;justify-content: center;">
+        <div style="height:40px; width: 100px;margin-left:600px; background-color: #5900ff;">
+          <amplify-sign-out></amplify-sign-out>
+        </div>
+      </div>
+      
 
     </amplify-authenticator>
   </div>
@@ -126,6 +137,8 @@ export default {
 
 
   methods: {
+    
+    
     async getData() {
       try {
         this.loading = true;
@@ -139,6 +152,8 @@ export default {
         this.loading = false;
       }
     },
+
+
     async createRestaurant() {
       const { name, description, city } = this.form
       if (!name || !description || !city) return;
@@ -153,6 +168,8 @@ export default {
         console.log('Error creating restaurant...', error)
       }
     },
+
+
     async deleteRestaurant(restaurant) {
       if (restaurant) {
         try {
@@ -170,6 +187,13 @@ export default {
 </script>
 
 <style>
+
+div#LoginSignOut amplify-sign-out#SignOutButton {
+    min-width: 100;
+    --padding: 0;
+} 
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -232,6 +256,9 @@ h1 {
 }
 button:hover {
   opacity: 0.8;
+}
+.left {
+  text-align: left;
 }
 input {
   width: 100px;
