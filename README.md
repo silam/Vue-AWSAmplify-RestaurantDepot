@@ -1,6 +1,6 @@
 # vue-amplify-res
 
-This project is about Maintaining the list of Vietnamese Restaurant in Minneapolis MN 
+This project is about Maintaining the list of Vietnamese Restaurant in MN.
 It uses VueJS as FrontEnd, json-server as a test server and AWS Amplify as to configure web backend, to deploy the web app, and to integrate UI components
 
 ## Project setup
