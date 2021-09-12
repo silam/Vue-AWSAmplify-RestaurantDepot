@@ -2,6 +2,11 @@
 
 This project is about Maintaining the list of Vietnamese Restaurant in MN.
 It uses VueJS as FrontEnd, json-server as a test server and AWS Amplify as to configure web backend, to deploy the web app, and to integrate UI components
+It also uses DynamoDB as serverless Database to keep the list of Restaurant.
+
+You can see the web running at 
+http://vueamplifyres-20210912080612-hostingbucket-dev.s3-website-us-east-1.amazonaws.com/
+
 
 ## Project setup
 ```
