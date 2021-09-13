@@ -58,11 +58,16 @@
         <div v-if="loading" class="loading">Loading...</div>
         <div class="card-container" v-if="!loading">
           <div class="card" v-for="restaurant of sortedRestaurants" :key="restaurant.id">
-            <div class="remove"><button @click='deleteRestaurant(restaurant)' class='button'>Delete</button></div>
+            <div class="remove"><button @click='deleteRestaurant(restaurant)' class='button'>x</button></div>
             <div class="name">{{ restaurant.city }}</div>
             <div class="price">{{ restaurant.name }}</div>
             <div class="symbol">{{ restaurant.description }}</div>
+            <div class="name">{{ restaurant.address }}</div>
+
             <div class="name">{{ restaurant.state }}</div>
+            <div class="name">{{ restaurant.zipcode }}</div>
+            <div class="name">Stars: {{ restaurant.stars }}</div>
+
 
           </div>
         </div>
