@@ -58,3 +58,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Link to my AWS Account appSync
+https://console.aws.amazon.com/appsync/home?region=us-east-1#/niep36rugrenrhj5fusx3m2lce/v1/schema
+
+
