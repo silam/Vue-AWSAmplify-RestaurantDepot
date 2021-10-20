@@ -1,0 +1,131 @@
+{
+  "data": {
+    "listRestaurants": {
+      "items": [
+        {
+          "address": "19234 Paddock Lane",
+          "city": "Plymouth",
+          "createdAt": "2021-09-11T13:00:17.961Z",
+          "description": "VN foods",
+          "id": "6ab79dc1-2ad9-438c-aec9-aa219405781f",
+          "name": "VietPho",
+          "stars": "3",
+          "state": "MN",
+          "updatedAt": "2021-09-11T13:00:17.961Z",
+          "zipcode": "55340"
+        },
+        {
+          "address": "2974 University Ave",
+          "city": "Minneapolis",
+          "createdAt": "2021-09-11T23:31:51.921Z",
+          "description": "Pho bowl is huge",
+          "id": "ba8c2f3d-6175-4c0d-9ab6-13223a7f859f",
+          "name": "Big Train Pho Restaurant",
+          "stars": "4",
+          "state": "MN",
+          "updatedAt": "2021-09-11T23:31:51.921Z",
+          "zipcode": "55344"
+        },
+        {
+          "address": null,
+          "city": "MPLS",
+          "createdAt": "2021-10-03T16:04:36.965Z",
+          "description": "Best Restaurant",
+          "id": "728b94ce-f7d4-4dc5-b7e9-3d0ea02ee320",
+          "name": "New World Food",
+          "stars": null,
+          "state": null,
+          "updatedAt": "2021-10-03T16:04:36.965Z",
+          "zipcode": null
+        },
+        {
+          "address": null,
+          "city": "Brooklyn Park",
+          "createdAt": "2021-09-12T22:56:36.247Z",
+          "description": "Relaxed kitchen providing familiar Chinese dishes such as sesame chicken, plus Thai options.",
+          "id": "be201d8c-38d0-42b5-9571-832533e7c5e8",
+          "name": "Thanh Vi",
+          "stars": null,
+          "state": null,
+          "updatedAt": "2021-09-12T22:56:36.247Z",
+          "zipcode": null
+        },
+        {
+          "address": "7645 University Ave",
+          "city": "St. Paul",
+          "createdAt": "2021-09-12T03:31:15.866Z",
+          "description": "Viet One Pho",
+          "id": "5e9010a4-e6fa-4dc6-ac98-6e413b6865f3",
+          "name": "Viet One Pho",
+          "stars": "4",
+          "state": "MN",
+          "updatedAt": "2021-09-12T03:31:15.866Z",
+          "zipcode": "55330"
+        },
+        {
+          "address": null,
+          "city": "Maple Grove",
+          "createdAt": "2021-09-12T22:55:04.512Z",
+          "description": "Pho, Bun Bo Hue, Wonton soup",
+          "id": "05b5c86b-354a-4b7f-bda4-711d9d6261a2",
+          "name": "Lotus Maple Grove",
+          "stars": null,
+          "state": null,
+          "updatedAt": "2021-09-12T22:55:04.512Z",
+          "zipcode": null
+        },
+        {
+          "address": "19234 Paddock",
+          "city": "Minneapolis",
+          "createdAt": "2021-09-12T03:30:09.924Z",
+          "description": "Pho Hong Dai",
+          "id": "52642fb4-dcc4-4ad9-951c-799051834a0c",
+          "name": "Pho Hong Dai",
+          "stars": "3",
+          "state": "MN",
+          "updatedAt": "2021-09-12T03:30:09.924Z",
+          "zipcode": "55454"
+        }
+      ]
+    }
+  }
+}
+
+
+
+mutation MyMutation {
+  createRestaurant(input: {
+    
+    address: "19234 Paddock",
+          city: "Minneapolis",
+          description: "Pho Hong Dai",
+          id: "52642fb4-dcc4-4ad9-951c-799051834a0766",
+          name: "Pho Hong Dai 2",
+          stars: "3",
+          state: "MN",
+         
+          zipcode: "55454"
+  
+  
+  }) {
+    address
+    city
+  }
+}
+
+
+
+mutation MyMutation {
+  createRestaurant(input: {address: "19234 Paddock", city: "Minneapolis", description: "Pho Hong Dai", name: "Pho Hong Dai 2", stars: "3", state: "MN", zipcode: "55454"}) {
+    address
+    city
+    createdAt
+    description
+    id
+    name
+    stars
+    state
+    updatedAt
+    zipcode
+  }
+}
